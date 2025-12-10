@@ -1,0 +1,261 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 100;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Body dengan latar dark blue yang lebih gelap */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000011, #001133); /* Gradient lebih gelap */
+    color: #f0f0f0; /* Teks sedikit lebih terang untuk kontras di latar gelap */
+    line-height: 1.8;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #001133, #002244); /* Gradient gelap */
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9); /* Shadow lebih kuat dan gelap */
+    border-bottom: 2px solid #003355;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.menu a:hover {
+    background: linear-gradient(45deg, #003355, #004466);
+    box-shadow: 0 0 20px rgba(0, 51, 85, 0.8); /* Glow lebih gelap */
+    transform: scale(1.05);
+}
+
+.contact-btn {
+    background: linear-gradient(45deg, #001133, #002244);
+    color: #f0f0f0;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #003355;
+    transition: all 0.4s ease;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(45deg, #002244, #003355);
+    box-shadow: 0 0 25px rgba(0, 51, 85, 0.9); /* Glow lebih kuat dan gelap */
+    transform: translateY(-3px);
+}
+
+/* Sections umum */
+section {
+    padding: 120px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: inherit;
+}
+
+/* Home: Foto kiri, teks kanan */
+.home {
+    background: linear-gradient(135deg, #000011, #001133);
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: left;
+    background: rgba(0, 17, 51, 0.2); /* Overlay lebih gelap */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8); /* Shadow lebih gelap */
+}
+
+.home-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.home-text p {
+    font-size: 1.2em;
+    color: #d0d0d0; /* Sedikit lebih gelap untuk hierarki */
+}
+
+.home-image {
+    flex: 1;
+    text-align: center;
+}
+
+.home-image .img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.home-image img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 30px rgba(0, 51, 85, 0.9);
+}
+
+/* About */
+.about {
+    background: linear-gradient(135deg, #001133, #002244);
+    color: #f0f0f0;
+    padding: 80px 20px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+.about h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    max-width: 800px;
+}
+
+/* Projects */
+.projects {
+    background: linear-gradient(135deg, #000011, #001133);
+}
+
+.project-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.project-card {
+    background: linear-gradient(135deg, #001133, #002244);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid #003355;
+}
+
+.project-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0, 51, 85, 0.9);
+}
+
+.project-image {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.project-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.project-image img:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+/* Background unik untuk setiap gambar project (dark blue variasi gelap) */
+.bg-1 {
+    background: linear-gradient(45deg, #001133, #002244);
+}
+
+.bg-2 {
+    background: linear-gradient(45deg, #000011, #001133);
+}
+
+/* Contact */
+.contact {
+    background: linear-gradient(135deg, #001133, #002244);
+    color: #f0f0f0;
+    padding: 80px 20px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+.contact h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #001133, #002244);
+    color: #f0f0f0;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.9);
+    border-top: 2px solid #003355;
+}
+
+/* Animasi fade-in yang lebih gelap dan elegan */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 1.2s ease-out;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
